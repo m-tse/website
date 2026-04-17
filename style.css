@@ -44,10 +44,21 @@ h1 {
 
 nav {
   margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 nav a {
-  margin-right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+nav svg {
+  width: 16px;
+  height: 16px;
 }
 
 nav a:hover {
