@@ -97,6 +97,13 @@ section p {
   text-indent: -20px;
 }
 
+.improvmx-link svg {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.2em;
+  margin-right: 2px;
+}
+
 a {
   color: #2563eb;
   text-decoration: none;
