@@ -31,7 +31,7 @@ main {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -78,7 +78,7 @@ body::after {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 8px;
 }
