@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why I Built TaxEstimate.fyi · Matthew Tse</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+  <main class="post">
+    <a href="../index.html#blog" class="post-back">&larr; Matthew Tse</a>
+
+    <header class="post-header">
+      <h1>Why I Built TaxEstimate.fyi</h1>
+      <div class="post-meta">April 23, 2024</div>
+    </header>
+
+    <article class="post-body">
+      <p>I used to only think about taxes in April. But as my income increased and diversified, I ran into surprise tax
+        bills and penalties. I then created complicated spreadsheets, read the IRS tax code and paid my accountant a lot.
+      </p>
+
+      <p>For most tax situations, people shouldn't have to do any of that, so I built
+        <a href="https://taxestimate.fyi">TaxEstimate.fyi</a> to share my tax estimation solution with everyone.</p>
+
+      <h2>The Surprise Tax Bill</h2>
+      <p>Like most people, I started earning a salaried income with taxes withheld each paycheck. Every April, I'd pay a
+        bit to turbotax, enter some data, and get a small refund or pay a few hundred. A bit annoying, but no big deal.
+      </p>
+
+      <p>As the years passed, my salary increased, and I started adding new income sources (selling stocks, interest
+        income, etc.). Still, I assumed my prior of leaving taxes off until April would be fine&mdash;the additional
+        non-withheld income sources weren't big.</p>
+
+      <p>But one April, TurboTax revealed a significant liability. The software indicated Matthew owed "$17,826 and a
+        $1,569 penalty for underpayment."</p>
+
+      <img src="images/why-i-built-taxestimatefyi/form-1040.png" alt="IRS Form 1040 showing $17,826 owed and a $1,569 estimated tax penalty">
+
+
+      <p>Shocked, he spent the rest of his day digging through income statements and his tax return, looking for some
+        obvious mistake. By the end, he realized there was no mistake, and he actually owed $17,826. Time to sell a bunch
+        of stock (more taxes!) to pay it off.</p>
+
+      <p>The reason for this discrepancy: federally mandated withholding amounts diverge from what people actually owe,
+        and this divergence increases with higher income levels.</p>
+
+      <h2>The Excel Spreadsheet</h2>
+      <p>So he got serious to avoid any future surprise bills and penalties. He read the IRS tax code, made an excel
+        spreadsheet, and consulted an accountant. Over the years he continued refining it, adding more complexity as
+        income sources diversified, and getting it closer to what he actually owed&mdash;eventually just a few hundred
+        dollars off.</p>
+
+      <p>But the spreadsheet had its limits. Without code it couldn't handle many edge cases well, so it was littered
+        with workarounds. Which meant he often didn't fully trust the spreadsheet when making updates.</p>
+
+      <p>Furthermore, whenever he told the story of his spreadsheet to coworkers, he discovered most of them have the
+        same tax estimation issue. They "solve" it by either paying an accountant a lot, eating the penalties, or
+        guestimating their taxes and hoping for the best.</p>
+
+      <h2>TaxEstimate.fyi</h2>
+      <p>So he decided to make a webapp out of his spreadsheet:
+        <a href="https://taxestimate.fyi">TaxEstimate.fyi</a>&mdash;you can clearly see the spreadsheet design
+        influences.</p>
+
+      <img src="images/why-i-built-taxestimatefyi/taxestimate-screenshot.png" alt="The TaxEstimate.fyi web app, showing income sources and cumulative tax calculations">
+
+
+      <p>He believes it's better than what's out there (<a href="https://smartasset.com/taxes/income-taxes">smartasset</a>,
+        <a href="https://turbotax.intuit.com/tax-tools/calculators/taxcaster">turbotax</a>,
+        <a href="https://www.irs.gov/individuals/tax-withholding-estimator">IRS</a>) for a few reasons:</p>
+
+      <h2>Quick &amp; Easy Input</h2>
+      <p>The IRS withholding estimator is so long and complicated that he's always given up before the end.</p>
+
+      <p>TaxEstimate.fyi lets users quickly add income sources and get immediate cumulative calculations.</p>
+
+      <h2>Intra-Year Tax Calculations</h2>
+      <p>All other calculators ask your full year's income, then give you a single number. But people's income is
+        distributed, often unevenly, throughout the year. TaxEstimate.fyi uniquely lets you select any date in the year,
+        and see how much you owe up to that date. This is great for quarterly payments, because you won't need to redo an
+        estimation 4 separate times.</p>
+
+      <h2>Transparent Calculations</h2>
+      <p>He dislikes how all the estimators just give you a final number with zero or minimal explanation. It really
+        erodes trust if you don't know where the number comes from. TaxEstimate.fyi lets you click into each tax
+        component to see a detailed breakdown of how it's calculated, along with relevant links to the official IRS tax
+        code.</p>
+
+      <h2>Save &amp; Update</h2>
+      <p>People have taxable events throughout the year, i.e. deciding to sell some stock. When that happens, no one
+        wants to redo an entire tax estimation to include that one change. TaxEstimate.fyi lets you save your tax
+        estimate and update just that one component later. This makes it easy to keep track of all your income sources
+        and tax liabilities throughout the year.</p>
+
+      <p>I hope you find this tool useful! If you don't, it doesn't cover your use case, or have any other suggestions,
+        I'd love to hear from you. Shoot me a message at
+        <a href="mailto:contact@taxestimate.fyi">contact@taxestimate.fyi</a>.</p>
+    </article>
+  </main>
+</body>
+
+</html>
