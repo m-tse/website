@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dactyl Manuform II - Component Selection · Matthew Tse</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+  <main class="post">
+    <a href="../index.html#blog" class="post-back">&larr; Matthew Tse</a>
+
+    <header class="post-header">
+      <h1>Dactyl Manuform II &mdash; Component Selection</h1>
+      <div class="post-meta">June 14, 2020</div>
+    </header>
+
+    <article class="post-body">
+      <p>So I decided to build a Dactyl myself. Even with that end goal decided&mdash;that known way out of this rabbit
+        hole&mdash;there are an almost infinite number of detour rabbit holes to fall into.</p>
+
+      <h2>What Kind of Dactyl?</h2>
+      <p>I'm going to be a bit of a open-source historian here, so bear with me.</p>
+
+      <p>The original dactyl was designed several years ago by Matt Adereth because he suffered from RSI and didn't see
+        anything on the market that satisfied his needs. You can see his original <a
+          href="https://github.com/adereth/dactyl-keyboard">GitHub repo</a> and an enlightening <a
+          href="https://www.youtube.com/watch?v=uk3A41U0iO4">YouTube video</a> for more information.</p>
+
+      <img src="images/dactyl-ii/glamourshot.png" alt="The original Dactyl">
+      <p class="caption">The original Dactyl</p>
+
+      <p>A very popular fork of his came out a little later called the <a
+          href="https://github.com/abstracthat/dactyl-manuform">Dactyl Manuform</a>, which modified the thumb cluster to
+        curve away from you&mdash;better matching the thumb's range of motion. It also extended the case chassis all the
+        way down, giving more room for hand-wiring&mdash;<em>much appreciated</em>.</p>
+
+      <img src="images/dactyl-ii/dactyl-manuform.jpg" alt="The Dactyl Manuform">
+      <p class="caption">The Dactyl Manuform</p>
+
+      <p>To decide between these two main styles, I moved my thumb around in the air a bunch and sorta realized the
+        Manuform would be more comfortable. It also seems anecdotally that most redditers also prefer the Manuform.</p>
+
+      <p>From there, I stared at the configuration options from ohkeycaps' <a
+          href="https://ohkeycaps.com/products/built-to-order-dactyl-manuform-keyboard">Built-to-order Dactyls</a> to
+        figure out what type of Dactyl Manuform I wanted&mdash;4x6, 4x5, 5x6, 6x6, etc. I decided that the 5x6 most
+        matched the number and placement of keys I most regularly used. The 6x6 had an extra row up top for <code>F</code>
+        keys, and the 4x6 was missing the number row.</p>
+
+      <h2>Which case?</h2>
+      <p>There are <a href="https://github.com/abstracthat/dactyl-manuform/network/members">45 forks</a> of just the
+        Dactyl Manuform, and <a href="https://github.com/adereth/dactyl-keyboard/network/members">384 forks</a> of the
+        original Dactl at the time of this writing, which is insane! Open-source and the ready availability of 3d-printing
+        has made the DIY community into a treasure.</p>
+
+      <p>I don't own a 3d printer, and I don't want to buy one just to print this case, so my main action was to find a
+        website selling prints of these designs, or contact a reddit member (they're very active and friendly!) to pay
+        for them to print one for me. I looked around and settled on a design by <a
+          href="https://www.reddit.com/user/hellmoneywarriors/">/u/hellmoneywarriors</a> called the <a
+          href="https://www.reddit.com/r/MechanicalKeyboards/comments/gllyya/dactyl_manuform_gx16_finished/">Dactyl
+          Manuform GX16</a>.</p>
+
+      <img src="images/dactyl-ii/gx16.png" alt="Dactyl Manuform GX16 by /u/hellmoneywarriors">
+      <p class="caption">The Dactyl Manuform GX16 by /u/hellmoneywarriors</p>
+
+      <p>The main thing I like about this design is that it uses a <a
+          href="https://summitcables.com/collections/diy/products/silver-aviator">GX16 aviator</a> to connect the two
+        halves of the keyboard.</p>
+
+      <p>Most of the other designs use either a RJ9&mdash;a phone cord jack, really really ugly&mdash;or a TRRS
+        port&mdash;the 4 ringed headphone connector you used to plug into your iPhone before they removed it. The <a
+          href="https://www.cablechick.com.au/blog/understanding-trrs-and-audio-jacks/">TRRS port</a> is way more
+        popular, mostly because it look sleek, it's relatively easily available, and some people make really slick TRRS
+        cables that you can buy to bling out your keyboard. However, there's one critical flaw to TRRS cables. Because
+        the rings are arranged stacked on top of eachother, when you insert or pull out the cable, you actually cross the
+        connections. The tip of the cable will slide past 3 other connections before reaching its final destination. Thus
+        you can short-circuit your keyboard microcontroller if you insert/eject the cable while the USB power is plugged
+        in. This has happened to some people, and others claim it's not an issue&mdash;regardless I wasn't happy that I'd
+        always have to be ultra careful about not accidentally disconnecting my keyboard halves while it's plugged in.</p>
+
+      <p>The aviator connector can only be inserted in one orientation, so you don't run the risk of short-circuit, and
+        it also looks ultra sleek. Like so sleek that it's a thing for mechnical keyboard enthusiasts to splice an
+        aviator connector into their USB cable&mdash;which serves no practical purpose&mdash;simply because it looks
+        cool.</p>
+
+      <p>The main disadvantage to this cable, is that you can't really buy a two-sided three-foot aviator cable, they
+        don't exist, you have to custom make it yourself. Whereas you can buy a 3 foot TRRS cable relatively easily. I
+        figured that since I'm already soldering this keyboard together, it's not much further to soldier a custom cable
+        for it as well. Plus, this lets me make my own custom sleeved cable without paying an extra arm and a leg.</p>
+
+      <p>So finally the case is decided upon.</p>
+
+      <h2>Which switches</h2>
+      <p>There are a dizzying array of switch types available now-a-days. When I first bought my mechanical keyboard, it
+        was basically a choice between Cherry Browns, Cherry Blues, or maybe Cherry Blacks. Rather than go deeper into
+        this particular rabbit hole, I decided to do the boring thing and stick with my Cherry MX Browns. I find Blues
+        too noisy. I tried clears once and they hurt because the actuation force was too strong. So maybe one day I'll try
+        Reds out, which have the same force as browns but use a linear profile rather than a tactile bump.</p>
+
+      <img src="images/dactyl-ii/cherry-mx-brown.jpg" alt="Cherry MX Brown switch">
+      <p class="caption">Cherry MX Brown</p>
+
+      <h2>Keycaps</h2>
+      <p>This could have been a really deep rabbit hole, because there's a whole sub community around keycaps. Luckily,
+        the Dactyl Manuform has some limitations that narrow down the choices significantly.</p>
+      <ul>
+        <li>uniform profile &mdash; <em>yes</em>, keycaps have various <a
+            href="https://www.reddit.com/r/MechanicalKeyboards/comments/2v9zf5/keycap_profiles/">profiles</a> that govern
+          the shape of the surface of the key that you touch with your finger. Because I'll be moving a bunch of keys
+          around to the thumb cluster, it's really best to get a uniform profile, which mostly means either DSA or
+          uniform R3 SA.</li>
+        <li>keycap set &mdash; because all the dactyl manuform keys are single letter sized, I needed a set of keys with
+          modifiers of single letter size. Sets that fulfill this criteria are often labelled as "ortholinear",
+          "ergodox", or "ergonomic".</li>
+      </ul>
+
+      <p>With these two requirements, I wasn't able to find any black keycaps. So I went with the dark grey <a
+          href="https://spkeyboards.com/collections/dsa-keycaps/products/dsa-dolch">DSA Dolch set</a> from Signature
+        Plastics. It was kind of expensive because I had to buy the 60% alpha kit, the icon modifier kit, and a one-off
+        pipe key.</p>
+
+      <img src="images/dactyl-ii/dsa-dolch.png" alt="DSA Dolch keycap set">
+      <p class="caption">The DSA Dolch set</p>
+
+      <h2>Microcontroller</h2>
+      <p>The brain of your keyboard. The standard choice for Dactyl Manuforms is the <a
+          href="https://deskthority.net/wiki/Arduino_Pro_Micro">Arduino Pro Micro</a>. It was developed by <a
+          href="https://www.sparkfun.com/">sparkfun</a> under an open hardware license which means there are many cheap
+        clones of it. I almost just bought two of these, but started reading about its main complaint. The USB-micro
+        connector is attached right onto the microcontroller itself, and it's not very solidly attached, so it's common
+        for users to accidentally rip off the port, requiring a new controller.</p>
+
+      <img src="images/dactyl-ii/pro-micro.png" alt="Arduino Pro Micro">
+      <p class="caption">Arduino Pro Micro</p>
+
+      <p>The <a href="https://deskthority.net/wiki/Elite-C">Elite-C</a> microcontroller was designed&mdash;by and for the
+        keyboard enthusiast community&mdash;to address this flaw, replacing the flimsy micro-USB port with a much hardier
+        USB-C connector. It also added additional I/O pins, an onboard physical reset button, a status LED, and a DFU
+        bootloader by default.</p>
+
+      <img src="images/dactyl-ii/elite-c.jpg" alt="Elite-C microcontroller">
+      <p class="caption">Elite-C</p>
+
+      <p>This all sounds great, and at a price of just $18 each, this seemed a very sensible upgrade.</p>
+
+      <h2>Amoeba PCBs</h2>
+      <p>I didn't even discover these until halfway through my ordering of parts. An Amoeba is a tiny single-switch PCB
+        that you mount under each switch. Instead of carefully running and shielding bare wires against each other to
+        avoid shorts, the little board routes the connections for you&mdash;you just solder a diode and your row/column
+        wires to its pads.</p>
+
+      <img src="images/dactyl-ii/amoeba-pcb.jpg" alt="Amoeba single-switch PCB">
+      <p class="caption">An Amoeba single-switch PCB</p>
+
+      <p>Honestly they're kind of unnecessary for a plain hand-wired build&mdash;you can just solder directly to the
+        switch pins. But if you ever want to add per-key LEDs, they're basically a must, since they give you tidy pads to
+        wire the LEDs into. I went with them anyway because I liked how clean and debuggable they'd make the wiring look.
+      </p>
+    </article>
+
+    <nav class="post-nav">
+      <a class="prev" href="dactyl-i.html">&larr; Part I &mdash; Why a Dactyl?</a>
+      <a class="next" href="dactyl-iii.html">Part III &mdash; The Build &rarr;</a>
+    </nav>
+  </main>
+</body>
+
+</html>
