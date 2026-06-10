@@ -20,6 +20,12 @@
   margin-bottom: 8px;
 }
 
+.post-deck {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
 .post-meta {
   font-size: 14px;
   color: #888;

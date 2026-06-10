@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0 for 1, Learnings From My First Launch Failure · Matthew Tse</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+  <main class="post">
+    <a href="../index.html#blog" class="post-back">&larr; Matthew Tse</a>
+
+    <header class="post-header">
+      <h1>0 for 1, Learnings From My First Launch Failure</h1>
+      <p class="post-deck">A Postmortem of TaxEstimate.fyi</p>
+      <div class="post-meta">April 25, 2024</div>
+    </header>
+
+    <article class="post-body">
+      <p>After building for ~2 months, I <a
+          href="https://substack.matthewtse.com/p/why-i-built-taxestimatefyi">launched</a> and abandoned my first
+        project <a href="https://taxestimate.fyi/">TaxEstimate.fyi</a> within the same week.</p>
+
+      <p>I knew from the get-go this would be a learning launch. Though harboring some secret hope it would find success,
+        I was fairly realistic that it would likely flop, and I should strictly time-bound this thing.</p>
+
+      <h2>Why Spend 2 Long Months?</h2>
+      <p>I kind of intentionally wasted more time than I should have because honestly, building it was <em>novel and
+          fun</em>:</p>
+      <ul>
+        <li>I hadn't written front-end code in a decade</li>
+        <li>I hadn't played with ChatGPT/Copilot augmented development yet</li>
+        <li>I hadn't ever done product design to think through a customer problem and crafting a product to solve that
+        </li>
+        <li>I hadn't ever done UI/UX design to think in the eyes of the user</li>
+        <li>I hadn't ever written marketing copy</li>
+        <li>I hadn't ever "launched" anything</li>
+        <li>I hadn't ever played with search-engine-marketing</li>
+        <li>I hadn't ever searched for users</li>
+      </ul>
+
+      <p>Doing all the above was energizing in and of itself. But eventually I had to face the reality that the
+        "learnings" were more for fun, and not actually bringing me any closer to my goals.</p>
+
+      <h2>What Went Well</h2>
+      <p>I'm honestly proud of the user experience I built. I set out to create a better tax estimator for myself, and I
+        will definitely be using this for my own tax estimations. Luckily, I built efficiently so it will continue to be
+        hosted forever on free-tier infrastructure.</p>
+
+      <p>I also had a few moments of creator-joy for the first time in my life:</p>
+      <ul>
+        <li>the second customer I showed it to, said with glowing eyes "wow that's amazing" on two separate occasions.
+        </li>
+        <li>heard "very simple and very useful" via email feedback</li>
+        <li>heard "I love the detailed breakdowns, Turbotax is terribly surface-level" via email feedback</li>
+      </ul>
+
+      <p>Though all the above should be taken with a grain of "friends trying to be encouraging" salt.</p>
+
+      <h2>What Went Wrong</h2>
+      <p><strong>Ultimately, it didn't solve a pressing enough problem</strong>. Tax estimates are <a
+          href="https://substack.matthewtse.com/i/136803302/the-excel-spreadsheet">hard to do</a> and <a
+          href="https://substack.matthewtse.com/i/136803302/the-surprise-tax-bill">useful to have</a>. But people won't
+        pay for something slightly better when there are pre-existing free &amp; adequate solutions (<a
+          href="https://www.irs.gov/individuals/tax-withholding-estimator">IRS</a>, <a
+          href="https://turbotax.intuit.com/tax-tools/calculators/taxcaster/">Turbotax</a>, <a
+          href="https://smartasset.com/taxes/income-taxes">Smartasset</a>). There's probably some type of upmarket
+        service that people would be willing to pay for, but the discovery path seems long and hard.</p>
+
+      <h2>Surprising Learnings</h2>
+      <p><strong>Cool Doesn't Pay</strong> &mdash; I've heard countless "that's so cool", and I impress myself with
+        "that's so cool" on a regular basis when creating new features. But "cool" is just self-masturbation, and so far
+        away from enough value for someone to pay</p>
+
+      <p><strong>Iteration on Bad Ideas is Futile</strong> &mdash; I knew initial traction was very thin. Only a few
+        potential users found it useful, and none would pay for it. I convinced myself that I could continually make
+        improvements until the whole thing "clicked together". But that was never going to happen.</p>
+
+      <p><strong>The Web Can Be a Silent Void</strong> &mdash; I had some grandiose expectations that posting to <a
+          href="https://news.ycombinator.com/item?id=40131156">HN</a> and <a
+          href="https://www.reddit.com/r/SideProject/comments/1c5jxu9/taxestimatefyi_estimate_understand_your_taxes/">reddit</a>
+        would kickstart my user base, or at the very least start a discussion. But both were met by crickets. I've
+        realized, to work, these types of posts need to be really sexy in their own right or backed by a strong
+        pre-existing audience who trusts your sexy brand. Going to start building my personal entrepreneur brand.</p>
+
+      <h2>What's Next</h2>
+      <p><strong>Follow The Money</strong> &mdash; I approached my first product far too idealistically. I had all these
+        good-sounding prerequisites that I now realize were naive:</p>
+      <ul>
+        <li>unique passion for the product&mdash;I'm most passionate about fun things like bouldering or snowboarding,
+          hard to build an enterprise SaaS out of those</li>
+        <li>hasn't been done before&mdash;probably because it's a bad business, it's unlikely I'm building the next
+          ChatGPT from my laptop</li>
+        <li>very low overhead&mdash;means my product won't provide much value</li>
+        <li>solves my own problem&mdash;all my own problems are just low-value consumer annoyances</li>
+      </ul>
+
+      <p>My next project is going to tackle higher value problems that people are willing to pay for.</p>
+
+      <p><strong>B2B</strong> &mdash; Really want to do B2B rather than B2C. It's higher barrier to entry because I don't
+        know B2B needs as well, and I have fewer natural acquisition channels. But it's probably worth it because <em>it
+          really sucks</em> begging consumers for my $5 app.</p>
+
+      <p><strong>Validate Even Faster</strong> &mdash; No more "playing entrepreneur house". It was fun lying to myself
+        and pretending to be building something useful. But it's time to be more ruthless and not waste time on a "fun
+        idea".</p>
+
+      <p>Hope you guys found this useful or entertaining. Any thoughts or things I missed? Let me know in the comments
+        below!</p>
+
+      <p>P.S. I recommend watching Alex West's <a href="https://www.youtube.com/watch?v=WAigd4b9jsA&t=1s">YouTube
+          video</a> on business ideas. I fell for every one of the pitfalls he mentions. He really captures exactly where
+        I'm at in the "learning from failure" process.</p>
+    </article>
+  </main>
+</body>
+
+</html>
