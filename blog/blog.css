@@ -1,0 +1,144 @@
+/* Blog styles — layered on top of the site's base style.css */
+
+.post {
+  max-width: 680px;
+}
+
+.post-back {
+  font-size: 14px;
+  margin-bottom: 32px;
+  display: inline-block;
+}
+
+.post-header {
+  margin-bottom: 32px;
+}
+
+.post-header h1 {
+  font-size: 30px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #888;
+}
+
+.post-body h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 36px 0 12px;
+}
+
+.post-body h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 28px 0 8px;
+}
+
+.post-body p {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.post-body ul {
+  color: #333;
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+.post-body li {
+  margin-bottom: 8px;
+}
+
+.post-body li > ul {
+  margin: 8px 0 0;
+}
+
+.post-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0 8px;
+  background: #f4f4f4;
+}
+
+.post-body .caption {
+  font-size: 14px;
+  color: #888;
+  margin: -2px 0 20px;
+  text-align: center;
+}
+
+.post-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: #f4f4f4;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+/* Lightweight CSS gallery — replaces the old jQuery/Galleria carousel */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.gallery a {
+  display: block;
+}
+
+.gallery img {
+  margin: 0;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.15s ease;
+}
+
+.gallery a:hover img {
+  opacity: 0.8;
+}
+
+/* Series / prev-next navigation at the foot of each post */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+  font-size: 15px;
+}
+
+.post-nav a {
+  max-width: 48%;
+}
+
+.post-nav .next {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* Blog index listing */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 20px;
+}
+
+.post-list a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.post-list .post-meta {
+  margin-top: 2px;
+}

@@ -70,13 +70,6 @@ section {
   scroll-margin-top: 40px;
 }
 
-/* Trailing spacer so short pages still have room to scroll anchored sections (#improvmx, #apps) to the top. */
-body::after {
-  content: "";
-  display: block;
-  height: 100vh;
-}
-
 h2 {
   font-size: 22px;
   font-weight: 600;
@@ -95,6 +88,19 @@ section p {
 #apps p {
   padding-left: 20px;
   text-indent: -20px;
+}
+
+#blog p {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.post-date {
+  color: #888;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .improvmx-link svg {
