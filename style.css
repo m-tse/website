@@ -90,7 +90,8 @@ section p {
   text-indent: -20px;
 }
 
-#blog p {
+#blog p,
+#podcasts p {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
